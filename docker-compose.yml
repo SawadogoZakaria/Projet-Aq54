@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  aq54-backend:
+    build:
+      context: ./aq54-backend
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_USERNAME=aq54user
+      - DB_PASSWORD=aq54password
+      - DB_NAME=aq54_db
+    depends_on:
+      - db
+
+  aq54-frontend:
+    build:
+      context: ./aq54-frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - aq54-backend
+
+  db:
+    image: postgres:13
+    environment:
+      - POSTGRES_DB=aq54_db
+      - POSTGRES_USER=aq54user
+      - POSTGRES_PASSWORD=aq54password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
