@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { createUser } from '../services/userService'; // Assurez-vous que le chemin est correct
+import { createUser } from '../services/userService';
 import styles from './styles/Login.module.css';
 import { loginUser } from '../services/userService';
 
@@ -16,8 +16,7 @@ const Login = () => {
     setError('');
     setIsLoading(true);
         try {
-          // Changez username en email
-          const userData = { email: username, password }; // Utilisez email au lieu de username
+          const userData = { email: username, password }; 
           const response = await loginUser(userData);
           console.log('Utilisateur connecté :', response);
           navigate('/dashboard');

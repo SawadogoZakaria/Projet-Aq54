@@ -33,9 +33,9 @@ const Dashboard = () => {
       <header className="header flex items-center justify-between px-10 py-3 bg-white shadow-md">
         <h2 className="text-[#1C160C] text-lg font-bold">AQ54</h2>
         <div className="flex gap-8">
-          <button className="text-[#1C160C] text-sm" onClick={() => {/* logique pour la documentation */}}>Documentation</button>
-          <button className="text-[#1C160C] text-sm" onClick={() => {/* logique pour l'API de référence */}}>API de référence</button>
-          <button className="text-[#1C160C] text-sm" onClick={() => {/* logique pour les exemples */}}>Exemples</button>
+          <button className="text-[#1C160C] text-sm" onClick={() => {}}>Documentation</button>
+          <button className="text-[#1C160C] text-sm" onClick={() => {}}>API de référence</button>
+          <button className="text-[#1C160C] text-sm" onClick={() => {}}>Exemples</button>
           <button className="h-10 px-4 bg-[#F4EFE6] text-[#1C160C] text-sm font-bold rounded-xl">Aide</button>
         </div>
       </header>

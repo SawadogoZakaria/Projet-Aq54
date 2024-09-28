@@ -1,4 +1,3 @@
-// src/sensors/sensors.controller.ts
 import { Controller, Get, Param, Query } from '@nestjs/common';
 import { SensorsService } from './sensors.service';
 
