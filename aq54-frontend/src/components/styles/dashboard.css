@@ -1,0 +1,32 @@
+body {
+    background-color: #f0f4f8; /* Couleur de fond douce */
+    font-family: 'Arial', sans-serif; /* Police moderne */
+}
+
+.header {
+    background-color: #ffffff; /* En-tête blanc */
+    padding: 15px 20px; /* Espacement autour du contenu */
+    display: flex; /* Flexbox pour aligner les éléments */
+    justify-content: space-between; /* Espacement entre les éléments */
+    align-items: center; /* Centrer verticalement */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.card {
+    background-color: #ffffff; /* Fond blanc pour les cartes */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    padding: 20px; /* Espacement interne */
+    margin: 10px 0; /* Espacement externe */
+    text-align: center; /* Centrer le texte dans les cartes */
+}
+
+.notification {
+    background-color: #ffffff; /* Fond blanc pour les notifications */
+    border-left: 5px solid #ffeeba; /* Bordure pour les notifications */
+    padding: 10px; /* Espacement interne */
+    margin: 10px 0; /* Espacement externe */
+    border-radius: 8px; /* Coins arrondis */
+    display: flex; /* Flexbox pour aligner les éléments */
+    align-items: center; /* Centrer verticalement */
+}
